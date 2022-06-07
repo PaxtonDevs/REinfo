@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://images6.alphacoders.com/118/1187419.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-color: rebeccapurple;
+
+  overflow: hidden;
+}
+
+/*----- input field--------*/
+input {
+  margin-top: 3rem;
+  margin-left: 5.3rem;
+}
+
+/*----- title box--------*/
+.title-container {
+  margin-left: 5rem;
+  margin-top: 5rem;
+  text-shadow: 2px 2px #2a7230;
+
+  animation: blurFadeInOut 1.2s ease-in;
+}
+
+h1 {
+  color: white;
+  font-size: 6rem;
+}
+
+h2 {
+  color: white;
+  margin-left: 5px;
+}
+
+/*----- button--------*/
+.button {
+  background-color: #fff;
+  display: inline-block;
+  margin-left: 5rem;
+  margin-top: 1rem;
+
+  width: 10rem;
+  height: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgb(104, 131, 110),
+    -0.2rem -0.2rem 0.5rem rgb(20, 22, 22);
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/*----- Button effects --------*/
+.button:hover {
+  color: #800d0d;
+}
+
+.button:active {
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2),
+    inset -0.2rem -0.2rem 0.5rem var(--white);
+}
+
+#getButton {
+  font-size: 1.5rem;
+}
+
+/*----- Button animation--------*/
+@keyframes blurFadeInOut {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 40px #fff;
+    -moz-transform: scale(3);
+  }
+  20%,
+  75% {
+    opacity: 1;
+    text-shadow: 0px 0px 1px #fff;
+    -moz-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    text-shadow: 0px 0px 50px #fff;
+    -moz-transform: scale(0);
+  }
+}
+
+/* .evil-list{
+    color: white;
+} */
+
+.container {
+  width: 50%;
+  margin-top: 3rem;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#infoText {
+  text-align: center;
+  margin-left: 50px;
+  font-size: 3rem;
+
+  text-shadow: 5px 5px 10px black;
+
+  /* overflow-wrap: break-word; */
+}
